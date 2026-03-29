@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muh Agung Zakariah | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <span class="text-xl font-bold gradient-text"></span>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="#about" class="hover:text-blue-600 transition">Profil</a>
+                    <a href="#experience" class="hover:text-blue-600 transition">Pengalaman</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Projek</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Kontak</a>
+                </div>
+                <button class="md:hidden text-slate-600" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">
+                Data Analyst
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+                Muh Agung Zakariah
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Mengubah data mentah menjadi wawasan bisnis yang berharga melalui analisis statistik dan Machine Learning.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-slate-900 text-white rounded-lg font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">
+                    Lihat Projek
+                </a>
+                <a href="https://github.com/agungza" target="_blank" class="px-8 py-3 bg-white border border-slate-200 text-slate-700 rounded-lg font-semibold hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-github text-xl"></i> GitHub Profil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-blue-600 mb-3 text-3xl"><i class="fa-brands fa-python"></i></div>
+                    <h3 class="font-bold">Python</h3>
+                    <p class="text-xs text-slate-500 uppercase">Pandas, NumPy</p>
+                </div>
+                <div>
+                    <div class="text-blue-600 mb-3 text-3xl"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="font-bold">SQL</h3>
+                    <p class="text-xs text-slate-500 uppercase">Query & Aggregation</p>
+                </div>
+                <div>
+                    <div class="text-blue-600 mb-3 text-3xl"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="font-bold">Visualisasi</h3>
+                    <p class="text-xs text-slate-500 uppercase">Matplotlib, Excel</p>
+                </div>
+                <div>
+                    <div class="text-blue-600 mb-3 text-3xl"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="font-bold">Machine Learning</h3>
+                    <p class="text-xs text-slate-500 uppercase">K-Means, Clustering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Education -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Lulusan Teknik Informatika dengan IPK 3.2, saya memiliki dasar yang kuat dalam pemrograman dan analisis data. Berpengalaman dalam mengelola dataset besar (>1000 transaksi) dan mengubahnya menjadi laporan yang dapat mendukung keputusan strategis.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600 mt-1">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Teknik Informatika</h4>
+                                <p class="text-sm text-slate-500 italic">Lulus Maret 2022</p>
+                                <p class="text-sm mt-1">Fokus: Data Analyst, AI, Computer Vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-2xl p-8 text-white">
+                    <h3 class="text-xl font-bold mb-6 border-b border-slate-700 pb-2">Sertifikasi</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-shield-halved text-blue-400"></i>
+                            <span>Ethical Hacking (2023)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-network-wired text-blue-400"></i>
+                            <span>Mikrotik MTCNA (2020)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-slate-100 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Pengalaman Kerja</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                
+                <!-- Experience 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-600 text-slate-500 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <i class="fa-solid fa-briefcase text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">CV. Outlet Savanah</div>
+                            <time class="text-xs font-semibold text-blue-600">2020 - 2021</time>
+                        </div>
+                        <div class="text-slate-500 text-sm font-medium mb-3 italic">Data Analyst (Magang)</div>
+                        <ul class="text-sm text-slate-600 list-disc list-inside space-y-1">
+                            <li>Memproses 1000+ data transaksi penjualan & inventori.</li>
+                            <li>Data cleaning & validasi untuk meningkatkan akurasi.</li>
+                            <li>Identifikasi pola pembelian pelanggan melalui laporan visual.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <i class="fa-solid fa-file-invoice text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Freelance Contract</div>
+                            <time class="text-xs font-semibold text-blue-600">Sept - Okt 2022</time>
+                        </div>
+                        <div class="text-slate-500 text-sm font-medium mb-3 italic">Data Entry</div>
+                        <p class="text-sm text-slate-600">
+                            Menginput dan mengelola data dalam jumlah besar dengan tingkat ketelitian tinggi serta melakukan validasi data sebelum analisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Projek Pilihan</h2>
+                    <p class="text-slate-500">Kumpulan pekerjaan terbaik saya di bidang Analisis Data.</p>
+                </div>
+                <a href="https://github.com/agungza" target="_blank" class="text-blue-600 font-semibold flex items-center gap-2 hover:underline">
+                    Semua Projek di GitHub <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white p-8">
+                        <div class="text-center">
+                            <i class="fa-solid fa-users text-5xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Segmentasi Pelanggan</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded">K-Means</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 text-[10px] font-bold uppercase rounded">Python</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase rounded">Pandas</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Menganalisis 1000 data pelanggan menggunakan metode WCSS (Elbow Method) untuk mengidentifikasi 3 segmen utama: Tidak Konsumtif, Milenial, dan Konsumtif. Memberikan insight mendalam bagi tim pemasaran.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-slate-400 italic">Januari 2024</span>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/agungza" class="text-slate-900 hover:text-blue-600"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm card-hover">
+                    <div class="h-48 bg-slate-100 flex items-center justify-center text-slate-400 p-8">
+                        <div class="text-center">
+                            <i class="fa-solid fa-chart-pie text-5xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Analisis Penjualan & Inventori</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded">Exploratory Data Analysis</span>
+                            <span class="px-2 py-1 bg-orange-50 text-orange-600 text-[10px] font-bold uppercase rounded">Matplotlib</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Visualisasi data transaksi dari CV. Outlet Savanah untuk mengidentifikasi tren musiman dan optimasi stok barang berdasarkan perputaran inventori.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-slate-400 italic">2021</span>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/agungza" class="text-slate-900 hover:text-blue-600"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Mari Berdiskusi</h2>
+            <p class="text-slate-400 mb-12">Saya selalu terbuka untuk peluang kolaborasi atau posisi penuh waktu sebagai Data Analyst.</p>
+            
+            <div class="grid sm:grid-cols-3 gap-8 mb-12">
+                <a href="mailto:agung.zakariah@gmail.com" class="p-6 bg-slate-800 rounded-xl hover:bg-slate-700 transition">
+                    <i class="fa-solid fa-envelope text-blue-400 text-2xl mb-4"></i>
+                    <p class="text-sm">Email Saya</p>
+                    <p class="font-semibold mt-1 truncate">agung.zakariah@gmail.com</p>
+                </a>
+                <a href="tel:082189728527" class="p-6 bg-slate-800 rounded-xl hover:bg-slate-700 transition">
+                    <i class="fa-solid fa-phone text-green-400 text-2xl mb-4"></i>
+                    <p class="text-sm">Telepon / WA</p>
+                    <p class="font-semibold mt-1">0821-8972-8527</p>
+                </a>
+                <a href="https://github.com/agungza" target="_blank" class="p-6 bg-slate-800 rounded-xl hover:bg-slate-700 transition">
+                    <i class="fa-brands fa-github text-slate-300 text-2xl mb-4"></i>
+                    <p class="text-sm">GitHub</p>
+                    <p class="font-semibold mt-1">@agungza</p>
+                </a>
+            </div>
+
+            <p class="text-slate-500 text-xs">
+                Makassar, Sulawesi Selatan, Indonesia
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 text-slate-600 text-center text-sm border-t border-slate-900">
+        <p>&copy; 2024 Muh Agung Zakariah. Dibuat dengan Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        btn.addEventListener('click', () => {
+            const menu = document.querySelector('.md\\:flex');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-6');
+            menu.classList.toggle('border-b');
+        });
+    </script>
+</body>
+</html>
